@@ -1,0 +1,89 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            border: 5px solid #0f3360bf;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header {
+            background-color: #16213e;
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            color: #e94560;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        nav {
+            background-color: #16213e;
+            padding: 25px;
+            text-align: center;
+            font-size: 24px;
+            color: #e94560;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        .main-content {
+            display: flex;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border-right: 3px solid #0f3460;
+        }
+
+        section {
+            background-color: #16213e;
+            padding: 60px 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #e94560;
+            border-bottom: 3px solid #0f3460;
+        }
+
+        article {
+            background-color: #16213e;
+            padding: 60px 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #b0acad;
+        }
+
+        aside {
+            background-color: #16213e;
+            padding: 100px 40px;
+            text-align: center;
+            font-size: 24px;
+            color: #e94560;
+            min-width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #16213e;
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #e94560;
+        }
