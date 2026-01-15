@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMRECE WEBSITE GRID RESPONSIVE</title> 
+</head>
+<style>
+*{
+    margin:0;
+    font-family: monospace;
+    border: border-box;
+}
+body {
+    margin: 0%;
+    background-image: url(https://i.pinimg.com/1200x/fa/26/40/fa264054b6a53d1c84b80cd982d40d80.jpg);
+}
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 20px;
+}
+.right-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 28px;
+}
+.right-nav a:hover {
+    color: rgb(179, 179, 96);
+}
+.cart {
+    font-size: 40px;        
+    margin-right: 25px;     
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    cursor: pointer;
+}
+.cart:hover {
+    color: rgb(197, 197, 120);  
+    transform: scale(1.1);      
+}
+h1{
+    color:wheat;
+    text-align: center;
+}
+h2{ 
+    color: rgb(15, 16, 17);
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    color: rgb(24, 28, 31);
+    text-align: center;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------ GRID EFFECT ADDED HERE ------------- */
+.gallary{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+/* ------------------------------------------------ */
+
+.content{
+    width: 100%;
+    margin: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 14px 28px rgba(59, 58, 58, 0.16),0 10px 10px rgba(0,0,0,0.22);
+    transition: .2s;
+    background: rgb(61, 77, 57);
+    opacity: .82;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(94, 87, 87, 0.16),0 3px 6px rgba(20, 20, 20, 0.23);
+    transform: translate(0px,-8px);
+}
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+p{
+    text-align: center;
+    color: rgb(20, 23, 26);
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: rgb(9, 10, 12);
+    margin: 0;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+.checked{
+    color: orange;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(20, 22, 24);
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.but-1,.but-2,.but-3,.but-4{
+     background-color: rgb(196, 149, 63);
+}
+.foot{
+    color: wheat;
+}
+#last{
+    color: wheat;
+}
+
+@media(max-width:1000px){
+    .content{
+        width: 100%;
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <header>
+        <h1 id="firsth1"><big>SHR<sub><b>O</b></sub>OKS</big></h1>
+    </header>
+    <main>
+        <div class="gallary">
+
+            <div class="content">
+            <img src="https://i.pinimg.com/1200x/11/5e/00/115e00ba95170fb252db310d725567a5.jpg">
+            <h3>MENS CLOTHS</h3>
+            <h2>Find Casual, Formal And Everyday Wear Designed For Comfort And Style.</h2>
+            <button class="but-1"><b>BUY NOW</b></button>
+            </div>
+        
+            <div class="content">
+            <img src="https://i.pinimg.com/1200x/e6/79/e6/e679e63b21ef6ca69f4c7978e6481d2a.jpg">
+            <h3>WOMENS CLOTHS</h3>
+            <h2>Explore Trendy Outfits, Classic Styles And Essentials For Every Occasion.</h2>
+            <button class="but-2"><b>BUY NOW</b></button>
+            </div>
+
+            <div class="content">
+            <img src="https://i.pinimg.com/1200x/04/4e/d4/044ed49cf8d2ca29744da0155fa8e224.jpg">
+            <h3>KIDS CLOTHS</h3>
+            <h2>Soft, Durable And Colorful Clothing Made For Active Little Ones.</h2>
+            <button class="but-3"><b>BUY NOW</b></button>
+            </div>
+
+            <div class="content">
+            <img src="https://i.pinimg.com/736x/85/85/47/858547ebe5166351c744c563432c0238.jpg">
+            <h3>FOODS & GROCERIES</h3>
+            <h2>Fresh Staples, Snacks And Daily Essentials Delivered To Your Door.</h2>
+            <button class="but-4"><b>BUY NOW</b></button>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="end">
+            <h2 class="foot"><pre><small>customer care: +91 9876543216  |   shrroksat@gmail.com  |  Privacy Policy  |  Terms and Condition</small></pre></h2>
+            <h2 class="foot">© 2025 shrooks <i>the only company which build trust with there first product</i>. All rights reserved.</h2>
+            <h3 id="last">---VIST AGAIN---</h3>
+        </div>
+    </footer>
+
+</body>
+</html>
